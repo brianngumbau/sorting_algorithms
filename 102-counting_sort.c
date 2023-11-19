@@ -41,10 +41,10 @@ void counting_sort(int *array, size_t size)
 			max = array[n];
 	counter = _calloc(max + 1, sizeof(int));
 	temp = _calloc(size + 1, sizeof(int));
-	
+
 	for (n = 0; n < size; n++)
 		counter[array[n]]++;
-	
+
 	for (index = 1; index <= max; index++)
 		counter[index] += counter[index - 1];
 	print_array(counter, max + 1);
@@ -54,7 +54,7 @@ void counting_sort(int *array, size_t size)
 		temp[counter[array[n]] - 1] = array[n];
 		counter[array[n]]--;
 	}
-	
+
 	for (n = 0; n < size; n++)
 		array[n] = temp[n];
 	free(temp);
