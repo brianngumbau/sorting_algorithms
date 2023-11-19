@@ -66,8 +66,7 @@ void qs(int *array, ssize_t first, ssize_t last, int size)
 	}
 }
 /**
- *quick_sort - sorts array of integers in ascending
- order using quicksort algorithm
+ *quick_sort - sorts array of integers using quick sort algorithm
  *@array: array
  *@size: array size
  */
