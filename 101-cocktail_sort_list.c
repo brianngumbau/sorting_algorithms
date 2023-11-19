@@ -23,9 +23,8 @@ listint_t *swap_node(listint_t *node, listint_t **list)
 	return (current);
 }
 /**
- *cocktail_sort_list - sorts a doubly linked list using cocktail
- *shaker sort
- *@list: list
+ * cocktail_sort_list - sorts a doubly linked list using cocktail shaker sort
+ * @list: list
  */
 void cocktail_sort_list(listint_t **list)
 {
