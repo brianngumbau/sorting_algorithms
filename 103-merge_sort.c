@@ -33,7 +33,7 @@ void merge(int *arr, int *temp, int start, int m, int end)
 
 	int left_size = m - start + 1, right_size = end - m;
 	int *array_left, *array_right;
-	
+
 	int left, right, k = 0;
 
 	array_left = &temp[0];
@@ -52,7 +52,7 @@ void merge(int *arr, int *temp, int start, int m, int end)
 			arr[k] = array_right[right], right++;
 		k++;
 	}
-	
+
 	while (left < left_size)
 		arr[k] = array_left[left], left++, k++;
 
